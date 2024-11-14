@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="x-icon" href="logo_esb.svg">
+    <title>ESB SCOLARITE</title>
+</head>
+<body>
+ <div class="wrapper">
+    <nav class="nav">
+        <div class="nav-logo">
+            <img src="logo_esb.svg" alt="logo_esb">
+        </div>
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="index.html" class="link active">Home</a></li>
+                <li><a href="https://www.esb.tn/en/" class="link">Blog</a></li>
+                <li><a href="https://www.esb.tn/en/" class="link">Services</a></li>
+                <li><a href="https://www.esb.tn/esb-2/school-of-business/" class="link">About</a></li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <button class="btn white-btn" id="loginBtn" onclick="window.location.href = 'index.html';">Etudiant</button>
+            <button class="btn" id="registerBtn" onclick="window.location.href = 'prof.html';" style="background: rgba(255, 255, 255, 0.7);">Professeur</button>
+            <button class="btn" id="registerBtn" onclick="window.location.href = 'admin.html';">Admin</button>
+        </div>
+    </nav>
+
+<!----------------------------- Form box ----------------------------------->    
+    <div class="form-box">
+        
+        <!------------------- etudiant form -------------------------->
+
+        <div class="login-container" id="Prof">
+            <div class="top">
+                <header>Professeur</header>
+            </div>
+            <form action="checkp.php" method="post">
+            <div class="input-box">
+                <input type="text" class="input-field" placeholder="Username or Email" name="username">
+                <i class="bx bx-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" placeholder="Password" name="password">
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+                <input type="submit" class="submit" value="Sign In">
+            </div>
+            <div class="two-col">
+                <div class="one">
+                    <input type="checkbox" id="login-check">
+                    <label for="login-check"> Remember Me</label>
+                </div>
+                <div class="two">
+                    <label><a href="#">Forgot password?</a></label>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>   
+</body>
+</html>

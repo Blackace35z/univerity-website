@@ -1,0 +1,72 @@
+<span style="font-family: verdana, geneva, sans-serif;"><!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <title>Dashboard | By Code Info</title>
+      <link rel="stylesheet" href="styles.css" />
+      <link rel="shortcut icon" type="x-icon" href="logo_esb.svg">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    </head>
+    <body>
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#" class="logo">
+              <img src="logo_esb.svg" alt="logo">
+              <span class="nav-item">Admin</span>
+            </a></li>
+            <li><a href="admin.php">
+              <i class="fas fa-home"></i>
+              <span class="nav-item">Home</span>
+            </a></li>
+            <li><a href="">
+              <i class="fas fa-user"></i>
+              <span class="nav-item">Profile</span>
+            </a></li>
+            <li><a href="">
+              <i class="fas fa-tasks"></i>
+              <span class="nav-item">Tasks</span>
+            </a></li>
+            <li><a href="insert.html">
+              <i class="fas fa-sign-out-alt"></i>
+              <span class="nav-item">Add student</span>
+            </a></li>
+            <li><a href="insertp.html">
+              <i class="fas fa-sign-out-alt"></i>
+              <span class="nav-item">Add Prof</span>
+            </a></li>
+            <li><a href="">
+              <i class="fas fa-cog"></i>
+              <span class="nav-item">Settings</span>
+            </a></li>
+            <li><a href="admin.html" class="logout">
+              <i class="fas fa-sign-out-alt"></i>
+              <span class="nav-item">Log out</span>
+            </a></li>
+          </ul>
+        </nav>
+    
+        <section class="main-con">
+            <div class="insert">
+                <form action="insert.php" method="post">
+                    <fieldset>
+                        <legend>Add Students</legend>
+                        <label for="nom">Nom:</label>
+                        <input type="text" name="nom"><br>
+                        <label for="prenom">Prenom:</label>
+                        <input type="text" name="prenom"><br>
+                        <label for="class">Class:</label>
+                        <input type="text" name="class"><br>
+                        <label for="Email">Email:</label>
+                        <input type="email" name="email"><br>
+                        <label for="password">Password:</label>
+                        <input type="password" name="pw"><br>
+                        <input type="submit">
+                        <input type="reset">
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+      </div>
+    </body>
+    </html></span>
